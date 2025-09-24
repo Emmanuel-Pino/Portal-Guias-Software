@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo instalar Python - Portal Guías</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-[#F9FAFB] text-[#1E293B]">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow">
+    <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 text-[#2563EB] font-bold">
+        <div class="w-9 h-9 rounded-md bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white">S</div>
+        <span>Portal Guías</span>
+      </a>
+      <ul class="flex gap-6 text-[#1E293B] font-medium">
+        <li><a href="index.html#inicio" class="hover:text-[#2563EB]">Inicio</a></li>
+        <li><a href="index.html#guias" class="hover:text-[#2563EB]">Guías</a></li>
+        <li><a href="index.html#contacto" class="hover:text-[#2563EB]">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO DE LA GUÍA -->
+  <main class="container mx-auto px-4 py-12 max-w-3xl">
+    <h1 class="text-3xl font-bold text-[#1E293B] mb-6">Cómo instalar Python en Windows</h1>
+    <p class="text-gray-600 mb-6">En esta guía aprenderás paso a paso cómo instalar Python en tu computadora con Windows y configurar un editor de código (IDE) para programar.</p>
+
+    <!-- PASOS -->
+    <ol class="space-y-6">
+
+      <!-- Paso 1 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">1. Descargar Python</h2>
+        <p>Visita el sitio oficial de Python en 
+          <a href="https://www.python.org/downloads/" target="_blank" class="text-[#2563EB] underline">python.org/downloads</a> 
+          y descarga la versión más reciente.</p>
+        <img src="/Images/python-download.png" alt="Página oficial de descargas de Python" class="rounded-lg shadow mt-4">
+      </li>
+
+      <!-- Paso 2 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">2. Ejecutar el instalador</h2>
+        <p>Haz doble clic en el archivo descargado. En la ventana del instalador, marca la casilla <strong>“Add Python to PATH”</strong> y luego haz clic en <em>Install Now</em>.</p>
+        <img src="/Images/python-installer.png" alt="Instalador de Python en Windows" class="rounded-lg shadow mt-4">
+      </li>
+
+      <!-- Paso 3 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">3. Verificar instalación</h2>
+        <p>Abre la terminal de Windows (cmd o PowerShell) y escribe:</p>
+        <pre class="bg-gray-100 p-3 rounded mt-2">python --version</pre>
+        <p>Si ves la versión instalada, ¡listo! Python está funcionando.</p>
+    </li>
+
+      <!-- Paso 4 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">4. Instalar un IDE (Editor de código)</h2>
+        <p>Para escribir y ejecutar tus programas de manera más cómoda, se recomienda instalar un IDE. Una de las mejores opciones es 
+          <a href="https://code.visualstudio.com/" target="_blank" class="text-[#2563EB] underline">Visual Studio Code</a>.</p>
+        <p>Pasos:</p>
+         <a href="vscode.html" class="mt-4 inline-block text-[#2563EB] font-medium hover:underline">
+  Leer más
+</a>
+      </li>
+
+    </ol>
+
+    <!-- BOTÓN VOLVER -->
+    <div class="mt-10">
+      <a href="index.html#guias" class="inline-block bg-[#2563EB] text-white px-6 py-3 rounded-lg shadow hover:bg-[#1E40AF]">
+        ← Volver a Guías
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-white shadow mt-16">
+    <div class="container mx-auto px-4 py-6 text-center text-gray-500">
+      © 2025 Portal Guías. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>

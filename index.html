@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Guías de Software</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+  <style>
+  html { scroll-behavior: smooth; }
+    /* Mensaje de confirmación atractivo */
+    .mensaje-flotante {
+      display: none;
+      position: fixed;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%) scale(0.95);
+      background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+      color: #fff;
+      box-shadow: 0 8px 32px rgba(34,197,94,0.15);
+      border-radius: 16px;
+      padding: 24px 32px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.5s, transform 0.5s;
+      text-align: center;
+      pointer-events: none;
+    }
+    .mensaje-flotante.visible {
+      display: block;
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+      pointer-events: auto;
+    }
+    .mensaje-flotante .icono {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+</style>
+</head>
+<body class="bg-[#F9FAFB] text-[#1E293B]">
+
+  <!-- Header -->
+<header class="bg-white shadow">
+  <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo / Inicio -->
+    <a href="#inicio" class="flex items-center gap-3 text-[#2563EB] font-bold">
+      <div class="w-9 h-9 rounded-md bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white">S</div>
+      <span>Portal Guías</span>
+    </a>
+
+    <!-- Navegación -->
+    <ul class="flex gap-6 text-[#1E293B] font-medium">
+      <li><a href="#inicio" class="hover:text-[#2563EB]">Inicio</a></li>
+      <li><a href="#guias" class="hover:text-[#2563EB]">Guías</a></li>
+      <li><a href="#contacto" class="hover:text-[#2563EB]">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Hero -->
+<section id="inicio" class="bg-[#F9FAFB] py-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-[#1E293B]">Aprende a instalar software paso a paso</h2>
+    <p class="mt-4 text-lg text-gray-600">Tutoriales claros, rápidos y actualizados</p>
+    <a href="#guias" class="mt-6 inline-block bg-[#2563EB] text-white px-6 py-3 rounded-lg shadow hover:bg-[#1E40AF]">
+      Ver Guías
+    </a>
+  </div>
+</section>
+
+  <!-- Guías -->
+  <section id="guias" class="container mx-auto px-4 py-12 grid gap-8 md:grid-cols-3">
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-[#1E293B]">Cómo instalar Python</h3>
+      <p class="text-gray-600 mt-2">Guía paso a paso en Windows 11 - 10</p>
+        <a href="python.html" class="mt-4 inline-block text-[#2563EB] font-medium hover:underline">Leer más</a>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-[#1E293B]">Cómo instalar Visual Studio Code</h3>
+      <p class="text-gray-600 mt-2">Editor recomendado para programadores</p>
+      <a href="vscode.html" class="mt-4 inline-block text-[#2563EB] font-medium hover:underline">
+  Leer más
+</a>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-[#1E293B]">Cómo instalar Node.js</h3>
+      <p class="text-gray-600 mt-2">Configura tu entorno de desarrollo en JavaScript</p>
+      <a href="node.html" class="mt-4 inline-block text-[#2563EB] font-medium hover:underline">
+  Leer más
+</a>
+    </div>
+  </section>
+
+
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="bg-gray-100 py-12">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Contáctanos</h2>
+        <form id="contact-form" class="bg-white p-8 rounded-2xl shadow-md">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+            <input type="text" id="name" name="from_name" required
+              class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
+          </div>
+
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">Correo</label>
+            <input type="email" id="email" name="reply_to" required
+              class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
+          </div>
+
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required
+              class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">
+            Enviar mensaje
+          </button>
+        </form>
+        <!-- Mensaje de confirmación flotante -->
+        <div id="mensajeConfirmacion" class="mensaje-flotante">
+          <span class="icono">✅</span>
+          ¡Tu mensaje ha sido enviado con éxito!
+        </div>
+      </div>
+    </section>
+
+    <!-- Script de EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("lwiOiGEj3ow5asfnp"); // <-- Aquí va tu Public Key de EmailJS
+      })();
+
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_u50ercd", "template_1oevm2w", this)
+          .then(() => {
+            // Mostrar mensaje flotante atractivo
+            const mensaje = document.getElementById("mensajeConfirmacion");
+            mensaje.classList.add("visible");
+            this.reset();
+            setTimeout(() => {
+              mensaje.classList.remove("visible");
+            }, 3500);
+          }, (error) => {
+            alert("Error al enviar ❌ " + JSON.stringify(error));
+          });
+      });
+    </script>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12 py-6 text-center text-gray-500">
+    © 2025 Portal Guías de Software — Todos los derechos reservados
+  </footer>
+
+</body>
+</html>

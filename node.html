@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo instalar Node.js - Portal Guías</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-[#F9FAFB] text-[#1E293B]">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow">
+    <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 text-[#2563EB] font-bold">
+        <div class="w-9 h-9 rounded-md bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white">S</div>
+        <span>Portal Guías</span>
+      </a>
+      <ul class="flex gap-6 text-[#1E293B] font-medium">
+        <li><a href="index.html#inicio" class="hover:text-[#2563EB]">Inicio</a></li>
+        <li><a href="index.html#guias" class="hover:text-[#2563EB]">Guías</a></li>
+        <li><a href="index.html#contacto" class="hover:text-[#2563EB]">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO DE LA GUÍA -->
+  <main class="container mx-auto px-4 py-12 max-w-3xl">
+    <h1 class="text-3xl font-bold text-[#1E293B] mb-6">Cómo instalar Node.js</h1>
+    <p class="text-gray-600 mb-6">En esta guía aprenderás a instalar Node.js en Windows para configurar tu entorno de desarrollo con JavaScript.</p>
+
+    <!-- PASOS -->
+    <ol class="space-y-6">
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">1. Descargar Node.js</h2>
+        <p>Ve al sitio oficial de Node.js en 
+          <a href="https://nodejs.org/" target="_blank" class="text-[#2563EB] underline">nodejs.org</a> 
+          y descarga la versión LTS (Long Term Support), que es la más estable.</p>
+      </li>
+
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">2. Instalar Node.js</h2>
+        <p>Ejecuta el instalador descargado. Acepta los términos y deja las opciones por defecto, luego haz clic en <em>Instalar</em>.</p>
+      </li>
+
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">3. Verificar instalación</h2>
+        <p>Abre la terminal (cmd o PowerShell) y escribe:</p>
+        <pre class="bg-gray-100 p-3 rounded mt-2">node -v</pre>
+        <p>Esto mostrará la versión de Node.js instalada.</p>
+        <p>También puedes verificar <strong>npm</strong> (el gestor de paquetes incluido) con:</p>
+        <pre class="bg-gray-100 p-3 rounded mt-2">npm -v</pre>
+      </li>
+
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">4. Probar Node.js</h2>
+        <p>Crea un archivo llamado <code>app.js</code> con el siguiente contenido:</p>
+        <pre class="bg-gray-100 p-3 rounded mt-2">console.log("Hola desde Node.js");</pre>
+        <p>Ejecuta el archivo con:</p>
+        <pre class="bg-gray-100 p-3 rounded mt-2">node app.js</pre>
+        <p>Si ves el mensaje en la terminal, Node.js está funcionando correctamente.</p>
+      </li>
+    </ol>
+
+    <!-- BOTÓN VOLVER -->
+    <div class="mt-10">
+      <a href="index.html#guias" class="inline-block bg-[#2563EB] text-white px-6 py-3 rounded-lg shadow hover:bg-[#1E40AF]">
+        ← Volver a Guías
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-white shadow mt-16">
+    <div class="container mx-auto px-4 py-6 text-center text-gray-500">
+      © 2025 Portal Guías. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
