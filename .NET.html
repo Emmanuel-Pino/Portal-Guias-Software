@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diferencias entre .NET Framework y .NET Core - Portal Guías</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-[#F9FAFB] text-[#1E293B]">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow">
+    <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 text-[#2563EB] font-bold">
+        <div class="w-9 h-9 rounded-md bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white">S</div>
+        <span>Portal Guías</span>
+      </a>
+      <ul class="flex gap-6 text-[#1E293B] font-medium">
+        <li><a href="index.html#inicio" class="hover:text-[#2563EB]">Inicio</a></li>
+        <li><a href="index.html#guias" class="hover:text-[#2563EB]">Guías</a></li>
+        <li><a href="index.html#contacto" class="hover:text-[#2563EB]">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO DE LA GUÍA -->
+  <main class="container mx-auto px-4 py-12 max-w-3xl">
+    <h1 class="text-3xl font-bold text-[#1E293B] mb-6">Diferencias entre .NET Framework y .NET Core</h1>
+    <p class="text-gray-600 mb-6">En esta guía aprenderás de manera sencilla las principales diferencias entre .NET Framework y .NET Core, sus ventajas y desventajas, y en qué casos conviene usar cada uno.</p>
+
+    <!-- SECCIONES -->
+    <ol class="space-y-6">
+
+      <!-- Explicación sencilla -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">1. Explicación sencilla</h2>
+        <p><strong>.NET Framework</strong> es la versión clásica del ecosistema .NET, creada para aplicaciones que corren únicamente en <strong>Windows</strong>. En cambio, <strong>.NET Core</strong> nació como una plataforma más moderna y <strong>multiplataforma</strong>, que funciona en Windows, Linux y macOS.</p>
+      </li>
+
+      <!-- Ventajas y desventajas -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">2. Ventajas y desventajas</h2>
+
+        <h3 class="font-medium mt-3">.NET Framework</h3>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li><strong>Ventajas:</strong> muy estable, gran compatibilidad con librerías antiguas, ideal para apps de escritorio (WinForms, WPF).</li>
+          <li><strong>Desventajas:</strong> limitado a Windows, menos actualizaciones modernas, no pensado para la nube.</li>
+        </ul>
+
+        <h3 class="font-medium mt-4">.NET Core</h3>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li><strong>Ventajas:</strong> multiplataforma, mejor rendimiento, ideal para web y APIs, código abierto y comunidad activa.</li>
+          <li><strong>Desventajas:</strong> menor soporte en proyectos antiguos, al inicio tenía menos librerías disponibles.</li>
+        </ul>
+      </li>
+
+      <!-- Cuándo usar -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">3. Cuándo usar cada uno</h2>
+        <ul class="list-disc list-inside text-gray-700">
+          <li><strong>Usa .NET Framework</strong> si trabajas en un proyecto existente de escritorio en Windows que depende de librerías antiguas.</li>
+          <li><strong>Usa .NET Core</strong> si vas a crear aplicaciones nuevas, especialmente web, APIs o microservicios que necesiten correr en diferentes sistemas operativos.</li>
+        </ul>
+      </li>
+
+      <!-- Ejemplos prácticos -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">4. Ejemplos prácticos de proyectos</h2>
+        <ul class="list-disc list-inside text-gray-700">
+          <li><strong>.NET Framework:</strong> sistemas de gestión en escritorio, aplicaciones internas para Windows, software empresarial antiguo.</li>
+          <li><strong>.NET Core:</strong> sitios web con ASP.NET Core, APIs REST, aplicaciones en la nube, microservicios escalables.</li>
+        </ul>
+      </li>
+
+    </ol>
+
+    <!-- BOTÓN VOLVER -->
+    <div class="mt-10">
+      <a href="index.html#guias" class="inline-block bg-[#2563EB] text-white px-6 py-3 rounded-lg shadow hover:bg-[#1E40AF]">
+        ← Volver a Guías
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-white shadow mt-16">
+    <div class="container mx-auto px-4 py-6 text-center text-gray-500">
+      © 2025 Portal Guías. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
