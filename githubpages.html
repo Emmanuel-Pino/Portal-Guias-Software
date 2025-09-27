@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar tu primera página con GitHub Pages - Portal Guías</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-[#F9FAFB] text-[#1E293B]">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow">
+    <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 text-[#2563EB] font-bold">
+        <div class="w-9 h-9 rounded-md bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white">S</div>
+        <span>Portal Guías</span>
+      </a>
+      <ul class="flex gap-6 text-[#1E293B] font-medium">
+        <li><a href="index.html#inicio" class="hover:text-[#2563EB]">Inicio</a></li>
+        <li><a href="index.html#guias" class="hover:text-[#2563EB]">Guías</a></li>
+        <li><a href="index.html#contacto" class="hover:text-[#2563EB]">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO DE LA GUÍA -->
+  <main class="container mx-auto px-4 py-12 max-w-3xl">
+    <h1 class="text-3xl font-bold text-[#1E293B] mb-6">Cómo usar GitHub Pages para publicar tu primera página web</h1>
+    <p class="text-gray-600 mb-6">En esta guía aprenderás a publicar un sitio web de manera gratuita usando GitHub Pages, paso a paso.</p>
+
+    <!-- PASOS -->
+    <ol class="space-y-6">
+
+      <!-- Paso 1 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">1. Crear un repositorio</h2>
+        <p>Entra a <a href="https://github.com" target="_blank" class="text-[#2563EB] underline">GitHub</a>, crea un nuevo repositorio público con el nombre <code>mi-pagina</code> y selecciona la rama <strong>main</strong>.</p>
+        <img src="/Images/github-new-repo.png" alt="Creación de un nuevo repositorio en GitHub" class="rounded-lg shadow mt-4">
+      </li>
+
+      <!-- Paso 2 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">2. Subir archivos HTML</h2>
+        <p>Dentro del repositorio, haz clic en <strong>Add file → Upload files</strong> y sube tu archivo <code>index.html</code>. Luego confirma con <strong>Commit changes</strong>.</p>
+        <img src="/Images/github-upload.png" alt="Subir archivos a GitHub" class="rounded-lg shadow mt-4">
+      </li>
+
+      <!-- Paso 3 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">3. Activar GitHub Pages</h2>
+        <p>En la pestaña <strong>Settings</strong>, ve a la sección <strong>Pages</strong>. Selecciona la rama <code>main</code> y la carpeta <code>root</code>. Guarda los cambios.</p>
+        <img src="/Images/github-pages-settings.png" alt="Configuración de GitHub Pages" class="rounded-lg shadow mt-4">
+      </li>
+
+      <!-- Paso 4 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">4. Ver tu sitio online</h2>
+        <p>Después de unos segundos, tu web estará disponible en una URL, por ejemplo:</p>
+        <pre class="bg-gray-100 p-3 rounded mt-2">https://tuusuario.github.io/pagina/</pre>
+        <p>LISTO Tu primera página web está publicada.</p>
+      </li>
+
+    </ol>
+
+    <!-- BOTÓN VOLVER -->
+    <div class="mt-10">
+      <a href="index.html#guias" class="inline-block bg-[#2563EB] text-white px-6 py-3 rounded-lg shadow hover:bg-[#1E40AF]">
+        ← Volver a Guías
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-white shadow mt-16">
+    <div class="container mx-auto px-4 py-6 text-center text-gray-500">
+      © 2025 Portal Guías. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>

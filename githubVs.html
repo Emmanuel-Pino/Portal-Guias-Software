@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear y clonar un repositorio con VS Code - Portal Guías</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-[#F9FAFB] text-[#1E293B]">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow">
+    <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 text-[#2563EB] font-bold">
+        <div class="w-9 h-9 rounded-md bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white">S</div>
+        <span>Portal Guías</span>
+      </a>
+      <ul class="flex gap-6 text-[#1E293B] font-medium">
+        <li><a href="index.html#inicio" class="hover:text-[#2563EB]">Inicio</a></li>
+        <li><a href="index.html#guias" class="hover:text-[#2563EB]">Guías</a></li>
+        <li><a href="index.html#contacto" class="hover:text-[#2563EB]">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO DE LA GUÍA -->
+  <main class="container mx-auto px-4 py-12 max-w-3xl">
+    <h1 class="text-3xl font-bold text-[#1E293B] mb-6">Cómo crear y clonar un repositorio en GitHub desde Visual Studio Code</h1>
+    <p class="text-gray-600 mb-6">En esta guía aprenderás a crear un repositorio en GitHub, clonarlo en Visual Studio Code y subir tus primeros cambios.</p>
+
+    <!-- PASOS -->
+    <ol class="space-y-6">
+
+      <!-- Paso 1 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">1. Crear un repositorio en GitHub</h2>
+        <p>Entra a <a href="https://github.com" target="_blank" class="text-[#2563EB] underline">GitHub</a> y haz clic en <strong>New Repository</strong>. Ponle un nombre (ejemplo: <code>mi-proyecto</code>), marca la opción <em>Public</em> y confirma con <strong>Create repository</strong>.</p>
+        <img src="/Images/github-new-repo.png" alt="Crear repositorio en GitHub" class="rounded-lg shadow mt-4">
+      </li>
+
+      <!-- Paso 2 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">2. Clonar el repositorio en VS Code</h2>
+        <p>Abre Visual Studio Code, presiona <kbd>Ctrl + Shift + P</kbd> y escribe <em>Git: Clone</em>. Pega la URL de tu repositorio (ejemplo: <code>https://github.com/tuusuario/mi-proyecto.git</code>).</p>
+        <img src="/Images/vscode-git-clone.png" alt="Clonar repositorio en VS Code" class="rounded-lg shadow mt-4">
+      </li>
+
+      <!-- Paso 3 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">3. Conectar cambios y hacer commits</h2>
+        <p>En la barra lateral de VS Code, verás el ícono de <strong>Source Control</strong>. Haz tus cambios en el código, luego escribe un mensaje en la caja de commit (ejemplo: <em>Primer cambio</em>) y presiona <strong>Commit</strong>.</p>
+        <img src="/Images/vscode-commit.png" alt="Hacer commit en VS Code" class="rounded-lg shadow mt-4">
+      </li>
+
+      <!-- Paso 4 -->
+      <li class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-2">4. Subir cambios a GitHub</h2>
+        <p>Haz clic en <strong>Sync Changes</strong> o usa el menú desplegable para ejecutar <code>git push</code>. Esto enviará tus cambios al repositorio en GitHub.</p>
+        <img src="/Images/vscode-push.png" alt="Subir cambios a GitHub desde VS Code" class="rounded-lg shadow mt-4">
+        <p class="mt-2">LISTO Ahora tu proyecto está sincronizado con GitHub.</p>
+      </li>
+
+    </ol>
+
+    <!-- BOTÓN VOLVER -->
+    <div class="mt-10">
+      <a href="index.html#guias" class="inline-block bg-[#2563EB] text-white px-6 py-3 rounded-lg shadow hover:bg-[#1E40AF]">
+        ← Volver a Guías
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-white shadow mt-16">
+    <div class="container mx-auto px-4 py-6 text-center text-gray-500">
+      © 2025 Portal Guías. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
