@@ -3,8 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre Nosotros - [Nombre del Sitio]</title>
+  <title>Sobre Nosotros - Portal de Guías de Software</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
@@ -13,27 +24,35 @@
       Sobre Nosotros
     </h1>
 
-    <section class="space-y-4">
-      <p>
+    <section class="space-y-6">
+      <p class="fade-in">
         En <span class="font-semibold">Portal de Guías de Software</span> creemos en la importancia de 
-        compartir conocimiento de forma clara, accesible y confiable. Nuestro objetivo es 
-        ofrecer a los usuarios recursos prácticos que les ayuden a aprender, resolver dudas 
-        y crecer en el mundo digital.
+        compartir conocimiento de forma clara, accesible y confiable.
       </p>
 
-      <p>
-        Este proyecto nació con la intención de <span class="italic">simplificar la tecnología para todos, crear guías prácticas paso a paso, apoyar a estudiantes y desarrolladores en formación</span>.
+      <p class="fade-in">
+        Este proyecto nació con la intención de <span class="italic">simplificar la tecnología para todos</span>.
       </p>
 
-      <p>
+      <p class="fade-in">
         Detrás de este sitio está <span class="font-semibold">Emmanuel Pino Ramirez</span>, 
-        apasionado por <span class="italic">el desarrollo de software, 
-        la educación online y la creación de contenido digital</span>. 
-        Con este espacio busco aportar valor, crecer junto a la comunidad y 
-        construir un recurso útil para todos.
+        apasionado por <span class="italic">el desarrollo de software, la educación online y la creación de contenido digital</span>.
       </p>
     </section>
   </main>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(fade => observer.observe(fade));
+  </script>
 
 </body>
 </html>
